@@ -9,12 +9,6 @@ socket.on('disconnect', function() {
     console.log('Disconnected from server');
 });
 
-socket.on('serverMessage', function(server) {
-    console.log('serverMessage', server);
-
-    socket.emit('clientResponse', {
-        from: 'client',
-        text: 'hey, This is client 1.'
-    });
-
+socket.on('newMessage', function(message) {
+    console.log('newMessage', message);
 });
