@@ -24,6 +24,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "mapbox-gl": "^0.53.1",
+    "moment": "^2.24.0",
     "socket.io": "^2.2.0"
   },
   "devDependencies": {
